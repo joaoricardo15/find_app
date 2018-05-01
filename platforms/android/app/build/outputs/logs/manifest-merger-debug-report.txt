@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 MERGED from [:CordovaLib] C:\Users\casadosheroi\Desktop\find_app\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
+INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 	package
 		ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:2:102-135
 		INJECTED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml
@@ -98,3 +98,7 @@ uses-feature#android.hardware.location.gps
 ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:16:5-66
 	android:name
 		ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:16:19-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from C:\Users\casadosheroi\Desktop\find_app\platforms\android\app\src\main\AndroidManifest.xml:17:22-78
