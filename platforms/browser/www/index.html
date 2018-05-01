@@ -2,33 +2,29 @@
 <html>
 <head>
 
-  <!-- requests of script files -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTr74nVYmMqNBGYeMwuLqVe3zCnA9tRWM&callback=initMap" async defer></script>
-  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/index.js"></script>
-  <script type="text/javascript" src="cordova.js"></script>
-
-  <!-- requests of layout files -->
-  <link rel="stylesheet" href="/css/bootstrap-theme.min.css"/>
-  <link rel="stylesheet" href="/css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="/css/index.css"/>
-  
-  <!--
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-    <meta name="viewport" content="initial-scale=1.0"><meta charset="utf-8">
-  -->
-  
+  <!-- directives -->
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  
-  <title>Find</title>
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
 
+  <!-- requests of script files -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTr74nVYmMqNBGYeMwuLqVe3zCnA9tRWM&callback=initMap" async defer></script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  
+  <!-- requests of layout files -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+  <title>Find</title>
 </head>
 <body>
-
+  
   <nav class="navbar navbar-default" style="margin-bottom: 0px;">
     <div class="container-fluid">
       
@@ -57,11 +53,14 @@
           -->
 
           <div class="input-group" style="width:90%;padding-top:8px;padding-bottom:8px;display:inline-flex;">
-            <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
+            
+          </div>
+
+          <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
             <span class="input-group-btn">
               <button class="btn btn-default" type="button" onclick="updateUserName()">Go!</button>
             </span>
-          </div>
+
         </ul>
 
         <!--
@@ -75,8 +74,6 @@
   </nav><!-- /.navbar-default -->
   
   <div id="map"></div>
-
-  <script type="text/javascript" src="cordova.js"></script>
  
 </body>
 </html>
