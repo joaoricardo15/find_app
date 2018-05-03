@@ -89,6 +89,20 @@ function updateMarkers(positions)
             }
             else
             {
+                var alphabet = [ 'a', 'b', 'c', 'd', 'e',
+                   'f', 'g', 'h', 'i', 'j',
+                   'k', 'l', 'm', 'n', 'o',
+                   'p', 'q', 'r', 's', 't',
+                   'u', 'v', 'w', 'x', 'y',
+                   'z' ];
+
+                var index = alphabet.findIndex(letter => letter === position.id[0].toLowerCase());
+
+                if(index < 1)
+                    index = 1;
+
+                var zIndex = index * position.id.length;
+
                 var marker = new google.maps.Marker({
                     map: map,
                     title: 'Nome do herói: '+position.id,
@@ -99,9 +113,9 @@ function updateMarkers(positions)
                     label: {
                         //color: '',
                         //fontFamily: '',
-                        fontSize: '15px',
-                        fontWeight: '5px',
-                        text: position.id
+                        fontSize: '18px',
+                        fontWeight: '2px',
+                        text: position.id.substring(0, 3)
                     },
                     //label: '<div style="font-size:20px;">'+position.id+'</div>',
                     //icon: 'images/bart-icon.png',
@@ -118,7 +132,7 @@ function updateMarkers(positions)
                     //     labelOrigin: new google.maps.Point(10, 20),
 
                     //   }
-                    zIndex: 1
+                    zIndex: zIndex
                 });
 
                 localPositions.push({
