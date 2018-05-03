@@ -1,60 +1,37 @@
 var server = true;
-var myId;
-var myLastId;
 var url = "https://findserver.azurewebsites.net/positions";
 var localPositions = [];
-var updateInterval = 1000;
-var uploadMyPositionTimer;
-var updatePositionsTimer;
-var uploadInterval = 1000;
+
 var minimumPrecision = 0.0001;
+var updateInterval = 1000;
+var updatePositionsTimer;
 var myPosition;
-var myLastPosition;
+var myId;
 var map;
 
-function initMap() {
-    navigator.geolocation.getCurrentPosition((position) => {
-        
-        myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
+function onMapReady() {
+    
+    myId = window.localStorage.getItem('myId');
 
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: myPosition,
-            zoom: 15
-        });
-    });
+    if(myId)
+        initMap();
+    else 
+        initLogin();    
 }
 
-//function onSuccess(position) {}
-
-//function onError(error) {}
-
-//var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
-
-function uploadMyPosition()
+function uploadMyPosition(position)
 {
-    navigator.geolocation.getCurrentPosition((position) => {
+    myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
+    
+    var data = {id: myId, lat: myPosition.lat, lng: myPosition.lng};
 
-        myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
-
-        if(!myLastPosition || myId != myLastId || Math.abs(myPosition.lat - myLastPosition.lat) > minimumPrecision || Math.abs(myPosition.lng - myLastPosition.lng) > minimumPrecision)
-        {
-            var data = {id: myId, lat: myPosition.lat, lng: myPosition.lng};
-
-            $.ajax({
-                url: url,
-                type: "POST",
-                data: JSON.stringify(data),
-                dataType: "json",
-                contentType: "application/json; charset=utf-8",
-                success: function(data, status){}
-            });
-
-            myLastPosition = myPosition;
-
-            if(myId != myLastId)
-                myLastId = myId;
-        }
-        
+    $.ajax({
+        url: url,
+        type: "POST",
+        data: JSON.stringify(data),
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data, status){}
     });
 }
 
@@ -65,9 +42,7 @@ function updatePositions()
         type: "GET",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        success: function(data, status){
-            updateMarkers(data);
-        }
+        success: function(data, status){ updateMarkers(data) }
     });
 }
 
@@ -109,7 +84,7 @@ function updateMarkers(positions)
                         //color: '',
                         //fontFamily: '',
                         fontSize: '18px',
-                        fontWeight: '2px',
+                        //fontWeight: '2px',
                         text: position.id.substring(0, 3)
                     },
                     //label: '<div style="font-size:20px;">'+position.id+'</div>',
@@ -140,27 +115,70 @@ function updateMarkers(positions)
 
     for(var localIndex in localPositions)
     {
-        var index = positions.findIndex(position => position.id === localPosition.id);
+        var index = positions.findIndex(position => position.id === localPositions[localIndex].id);
             
-        if(index < 0)
+        if(index < 0 && localPositions[localIndex].id != myId)
         {
             localPositions[localIndex].marker.setMap(null);
             localPositions[localIndex] = null;
         }
-   }
+    }
 }
 
-function updateUserName()
+function login()
 {
     var userName = document.getElementById('userName').value;
 
-    if(userName != "" && userName != myLastId)
+    if(userName != "")
     {
         myId = userName;
+        window.localStorage.setItem('myId', userName);
 
-        clearInterval(uploadMyPositionTimer);
-        uploadMyPositionTimer = setInterval(uploadMyPosition, uploadInterval);
-        clearInterval(updatePositionsTimer);
-        updatePositionsTimer = setInterval(updatePositions, updateInterval);
+        finishLogin();
+        initMap();
     }    
+}
+
+function initMap()
+{
+    navigator.geolocation.getCurrentPosition((position) => {
+
+        var divMap = document.createElement("div");
+        divMap.id = "map";
+        document.body.appendChild(divMap);
+
+        map = new google.maps.Map(divMap, {
+            center: {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            },
+            zoom: 15
+        });
+
+        uploadMyPosition(position);
+    });
+
+    navigator.geolocation.watchPosition(uploadMyPosition);
+    updatePositionsTimer = setInterval(updatePositions, updateInterval);
+}
+
+function initLogin()
+{
+    var idBar = document.createElement("div");
+    idBar.innerHTML = '\
+        <div id="loginBox">\
+            <span id="loginTitle"> Insira aqui o seu nome de usuário</span></br>\
+            <div id="loginBar">\
+                <input id="userName" class="form-control" type="text" placeholder="Insert your user name (ex: joao)">\
+                <button id="goButton" class="btn btn-default" type="button" onclick="login()">Go!</button>\
+            </div>\
+        </div>';
+    idBar.id = "loginPage";
+    document.body.appendChild(idBar);
+}
+
+function finishLogin()
+{
+    var idBar = document.getElementById("loginPage");
+    document.body.removeChild(idBar);
 }

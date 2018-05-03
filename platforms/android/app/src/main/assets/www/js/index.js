@@ -1,27 +1,49 @@
 var server = true;
 var myId;
-var myLastId;
 var url = "https://findserver.azurewebsites.net/positions";
 var localPositions = [];
-var updateInterval = 1000;
 var uploadMyPositionTimer;
 var updatePositionsTimer;
+var updateInterval = 1000;
 var uploadInterval = 1000;
 var minimumPrecision = 0.0001;
 var myPosition;
 var myLastPosition;
 var map;
+var idBar;
 
 function initMap() {
-    navigator.geolocation.getCurrentPosition((position) => {
-        
-        myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
+    
+    myId = window.localStorage.getItem('myId');
 
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: myPosition,
-            zoom: 15
+    if(myId){
+
+        navigator.geolocation.getCurrentPosition((position) => {
+        
+            myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
+    
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myPosition,
+                zoom: 15
+            });
         });
-    });
+
+        clearInterval(uploadMyPositionTimer);
+        uploadMyPositionTimer = setInterval(uploadMyPosition, uploadInterval);
+        clearInterval(updatePositionsTimer);
+        updatePositionsTimer = setInterval(updatePositions, updateInterval);
+    }   
+    else {
+        idBar = document.createElement("div");
+        idBar.innerHTML = '\
+            <div style="width:89%;padding-top:8px;padding-bottom:8px;display:inline-flex;">\
+                <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">\
+                <span class="input-group-btn">\
+                    <button class="btn btn-default" type="button" onclick="getUserName()">Go!</button>\
+                </span>\
+            </div>';
+        document.body.appendChild(idBar);  
+    }   
 }
 
 //function onSuccess(position) {}
@@ -36,7 +58,7 @@ function uploadMyPosition()
 
         myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
 
-        if(!myLastPosition || myId != myLastId || Math.abs(myPosition.lat - myLastPosition.lat) > minimumPrecision || Math.abs(myPosition.lng - myLastPosition.lng) > minimumPrecision)
+        if(!myLastPosition || Math.abs(myPosition.lat - myLastPosition.lat) > minimumPrecision || Math.abs(myPosition.lng - myLastPosition.lng) > minimumPrecision)
         {
             var data = {id: myId, lat: myPosition.lat, lng: myPosition.lng};
 
@@ -50,9 +72,6 @@ function uploadMyPosition()
             });
 
             myLastPosition = myPosition;
-
-            if(myId != myLastId)
-                myLastId = myId;
         }
         
     });
@@ -89,12 +108,7 @@ function updateMarkers(positions)
             }
             else
             {
-                var alphabet = [ 'a', 'b', 'c', 'd', 'e',
-                   'f', 'g', 'h', 'i', 'j',
-                   'k', 'l', 'm', 'n', 'o',
-                   'p', 'q', 'r', 's', 't',
-                   'u', 'v', 'w', 'x', 'y',
-                   'z' ];
+                var alphabet = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
                 var index = alphabet.findIndex(letter => letter === position.id[0].toLowerCase());
 
@@ -145,7 +159,7 @@ function updateMarkers(positions)
 
     for(var localIndex in localPositions)
     {
-        var index = positions.findIndex(position => position.id === localPosition.id);
+        var index = positions.findIndex(position => position.id === localPositions[localIndex].id);
             
         if(index < 0)
         {
@@ -155,17 +169,28 @@ function updateMarkers(positions)
    }
 }
 
-function updateUserName()
+function getUserName()
 {
     var userName = document.getElementById('userName').value;
 
-    if(userName != "" && userName != myLastId)
+    if(userName != "")
     {
         myId = userName;
+        window.localStorage.setItem('myId', userName);
 
-        clearInterval(uploadMyPositionTimer);
+        navigator.geolocation.getCurrentPosition((position) => {
+        
+            myPosition = {lat: position.coords.latitude, lng: position.coords.longitude};
+    
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myPosition,
+                zoom: 15
+            });
+        });
+
         uploadMyPositionTimer = setInterval(uploadMyPosition, uploadInterval);
-        clearInterval(updatePositionsTimer);
         updatePositionsTimer = setInterval(updatePositions, updateInterval);
+
+        idBar.remove()
     }    
 }
