@@ -1,7 +1,7 @@
 var server = true;
 var myId;
 var myLastId;
-var url = "http://localhost/positions";
+var url = "https://findserver.azurewebsites.net/positions";
 var localPositions = [];
 var updateInterval = 1000;
 var uploadMyPositionTimer;
@@ -30,16 +30,6 @@ function initMap() {
 
 //var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
 
-var header = cordova.plugin.http.getBasicAuthHeader('user', 'password');
-
-cordova.plugin.http.useBasicAuth('user', 'password');
-
-cordova.plugin.http.setHeader('www.find.com', 'Header', 'Value');
-
-cordova.plugin.http.setDataSerializer('json');
-
-cordova.plugin.http.setRequestTimeout(5.0);
-
 function uploadMyPosition()
 {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -49,27 +39,20 @@ function uploadMyPosition()
         if(!myLastPosition || myId != myLastId || Math.abs(myPosition.lat - myLastPosition.lat) > minimumPrecision || Math.abs(myPosition.lng - myLastPosition.lng) > minimumPrecision)
         {
             var data = {id: myId, lat: myPosition.lat, lng: myPosition.lng};
-            
-            cordova.plugin.http.sendRequest(url, {
-                method: 'post',
-                data: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                function(response) {}
-            });
 
-            // $.ajax({
-            //     url: url,
-            //     type: "POST",
-            //     data: JSON.stringify(data),
-            //     dataType: "json",
-            //     contentType: "application/json; charset=utf-8",
-            //     success: function(data, status){}
-            // });
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: JSON.stringify(data),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function(data, status){}
+            });
             
-            myLastId = myId;
             myLastPosition = myPosition;
+
+            if(myId != myLastId)
+                myLastId = myId;
         }
         
     });
@@ -77,26 +60,15 @@ function uploadMyPosition()
 
 function updatePositions()
 {
-    cordova.plugin.http.sendRequest(url, {
-        method: 'get',
-        data: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        function(response) {
-            alert('status: '+response.status);
+    $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(data, status){
+            updateMarkers(data);
         }
     });
-
-    // $.ajax({
-    //     url: url,
-    //     type: "GET",
-    //     dataType: "json",
-    //     contentType: "application/json; charset=utf-8",
-    //     success: function(data, status){
-    //         updateMarkers(data);
-    //     }
-    // });
 }
 
 function updateMarkers(positions)
@@ -124,7 +96,7 @@ function updateMarkers(positions)
                         lng: position.lng
                     },
                     icon: 'images/bart-icon.png',
-                    //animation: google.maps.Animation.DROP,
+                    animation: google.maps.Animation.DROP,
                     map: map
                 });
 
@@ -135,6 +107,17 @@ function updateMarkers(positions)
             }
         }
     }
+
+    for(var localIndex in localPositions)
+    {
+        var index = positions.findIndex(position => position.id === localPosition.id);
+            
+        if(index < 0)
+        {
+            localPositions[localIndex].marker.setMap(null);
+            localPositions[localIndex] = null;
+        }
+   }
 }
 
 function updateUserName()

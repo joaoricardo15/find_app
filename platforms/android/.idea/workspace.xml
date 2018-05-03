@@ -3,55 +3,276 @@
   <component name="ChangeListManager">
     <list default="true" id="8a4e27bb-d608-495e-9edd-26962ac5b850" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../config.xml" afterPath="$PROJECT_DIR$/../../config.xml" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/plugin.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/HttpRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/OkConnectionFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/TLSSocketFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpDelete.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpDownload.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpGet.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpHead.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPlugin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPost.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPut.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpUpload.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/browser/cordova-http-plugin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFHTTPSessionManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFHTTPSessionManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworkReachabilityManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworkReachabilityManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworking.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFSecurityPolicy.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFSecurityPolicy.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLRequestSerialization.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLRequestSerialization.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLResponseSerialization.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLResponseSerialization.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLSessionManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLSessionManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/CordovaHttpPlugin.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/CordovaHttpPlugin.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/TextRequestSerializer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/TextRequestSerializer.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/TextResponseSerializer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/src/ios/TextResponseSerializer.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/advanced-http.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/angular-integration.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/cookie-handler.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/helpers.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/local-storage-store.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/lodash.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/messages.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../node_modules/cordova-plugin-advanced-http/www/umd-tough-cookie.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../package-lock.json" afterPath="$PROJECT_DIR$/../../package-lock.json" />
       <change beforePath="$PROJECT_DIR$/../../package.json" afterPath="$PROJECT_DIR$/../../package.json" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/android.json" afterPath="$PROJECT_DIR$/android.json" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/cordova_plugins.js" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/index.html" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/index.html" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/js/index.js" afterPath="$PROJECT_DIR$/app/build/intermediates/assets/debug/www/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$10.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$5.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$6.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$7.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$8.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$9.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$Base64.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$CloseOperation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$ConnectionFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$FlushOperation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$HttpRequestException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$Operation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$RequestOutputStream.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$UploadProgress$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest$UploadProgress.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/HttpRequest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/OkConnectionFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/github/kevinsawicki/http/TLSSocketFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpDelete.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpDownload.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpGet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpHead.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpPatch.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpPlugin.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpPost.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpPut.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/synconset/cordovahttp/CordovaHttpUpload.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/MespHmGuLstgVS7Lh28dpZiSrs4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/cRFuRY_cm3cxj5PKA5uUj8Oll0Y=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/s7nJZ0Z23DeVMVs8Qf1NZUBwFS4=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/MespHmGuLstgVS7Lh28dpZiSrs4=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/cRFuRY_cm3cxj5PKA5uUj8Oll0Y=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/s7nJZ0Z23DeVMVs8Qf1NZUBwFS4=" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/NjWF9Oshl+QXUnP3gdIanbEEc9Y=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/NjWF9Oshl+QXUnP3gdIanbEEc9Y=" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/eLZQg+LyaxkHpxuc+7vtE4BF7kw=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/eLZQg+LyaxkHpxuc+7vtE4BF7kw=" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/xml_config.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/xml_config.xml.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$10.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$5.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$6.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$7.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$8.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$9.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$Base64.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$CloseOperation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$ConnectionFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$FlushOperation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$HttpRequestException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$Operation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$RequestOutputStream.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$UploadProgress$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest$UploadProgress.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/HttpRequest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/OkConnectionFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/github/kevinsawicki/http/TLSSocketFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttp.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpDelete.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpDownload.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpGet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpHead.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpPatch.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpPlugin.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpPost.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpPut.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/desugar/debug/1/com/synconset/cordovahttp/CordovaHttpUpload.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$10.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$3.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$4.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$5.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$6.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$7.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$8.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$9.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$Base64.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$CloseOperation.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$ConnectionFactory.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$FlushOperation.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$HttpRequestException.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$Operation.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$RequestOutputStream.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$UploadProgress$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest$UploadProgress.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/HttpRequest.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/OkConnectionFactory.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/github/kevinsawicki/http/TLSSocketFactory.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttp.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpDelete.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpDownload.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpGet.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpHead.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpPatch.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpPlugin.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpPost.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpPut.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/synconset/cordovahttp/CordovaHttpUpload.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/stackFramesFixer/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/stackFramesFixer/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/app/src/main/assets/www/cordova_plugins.js" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/index.html" afterPath="$PROJECT_DIR$/app/src/main/assets/www/index.html" />
       <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/js/index.js" afterPath="$PROJECT_DIR$/app/src/main/assets/www/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/kevinsawicki/http/HttpRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/kevinsawicki/http/OkConnectionFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/kevinsawicki/http/TLSSocketFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpDelete.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpDownload.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpGet.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpHead.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpPlugin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpPost.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpPut.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/synconset/cordovahttp/CordovaHttpUpload.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" />
-      <change beforePath="$PROJECT_DIR$/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platform_www/cordova_plugins.js" />
       <change beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
       <change beforePath="$PROJECT_DIR$/../browser/browser.json" afterPath="$PROJECT_DIR$/../browser/browser.json" />
       <change beforePath="$PROJECT_DIR$/../browser/platform_www/cordova_plugins.js" afterPath="$PROJECT_DIR$/../browser/platform_www/cordova_plugins.js" />
       <change beforePath="$PROJECT_DIR$/../browser/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/../browser/www/cordova_plugins.js" />
-      <change beforePath="$PROJECT_DIR$/../browser/www/index.html" afterPath="$PROJECT_DIR$/../browser/www/index.html" />
+      <change beforePath="$PROJECT_DIR$/../browser/www/js/index.js" afterPath="$PROJECT_DIR$/../browser/www/js/index.js" />
       <change beforePath="$PROJECT_DIR$/../../plugins/android.json" afterPath="$PROJECT_DIR$/../../plugins/android.json" />
       <change beforePath="$PROJECT_DIR$/../../plugins/browser.json" afterPath="$PROJECT_DIR$/../../plugins/browser.json" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/plugin.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/HttpRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/OkConnectionFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/github/kevinsawicki/http/TLSSocketFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpDelete.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpDownload.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpGet.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpHead.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPatch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPlugin.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPost.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpPut.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/android/com/synconset/cordovahttp/CordovaHttpUpload.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/browser/cordova-http-plugin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFHTTPSessionManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFHTTPSessionManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworkReachabilityManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworkReachabilityManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFNetworking.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFSecurityPolicy.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFSecurityPolicy.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLRequestSerialization.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLRequestSerialization.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLResponseSerialization.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLResponseSerialization.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLSessionManager.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/AFNetworking/AFURLSessionManager.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/CordovaHttpPlugin.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/CordovaHttpPlugin.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/TextRequestSerializer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/TextRequestSerializer.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/TextResponseSerializer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/src/ios/TextResponseSerializer.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/advanced-http.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/angular-integration.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/cookie-handler.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/helpers.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/local-storage-store.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/lodash.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/messages.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../../plugins/fetch.json" afterPath="$PROJECT_DIR$/../../plugins/fetch.json" />
       <change beforePath="$PROJECT_DIR$/../../www/js/index.js" afterPath="$PROJECT_DIR$/../../www/js/index.js" />
     </list>
@@ -79,8 +300,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/io/cordova/hellocordova/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="168">
+              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -3357,7 +3578,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33007336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33007336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3429,8 +3650,8 @@
     <entry file="file://$PROJECT_DIR$/local.properties" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/io/cordova/hellocordova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
           <folding />
         </state>
       </provider>
