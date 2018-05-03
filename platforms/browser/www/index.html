@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- directives -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <!-- requests of script files -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTr74nVYmMqNBGYeMwuLqVe3zCnA9tRWM&callback=initMap" async defer></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <!-- requests of layout files -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+  <title>Find</title>
+</head>
+<body>
+  
+  <!--
+  <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+    <div class="container-fluid">
+      
+      <!--
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Find</a>
+      </div>
+      
+  
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left:0px;">
+        <ul class="nav navbar-nav">
+
+          <!--
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Options<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        
+
+          <div class="input-group" style="width:90%;padding-top:8px;padding-bottom:8px;display:inline-flex;">
+            <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" onclick="updateUserName()">Go!</button>
+            </span>
+          </div>
+        </ul>
+
+        <!--
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        </ul>
+        
+
+      </div><!-- /.navbar-collapse 
+    </div><!-- /.container-fluid 
+  </nav><!-- /.navbar-default -->
+  
+  <div style="width:89%;padding-top:8px;padding-bottom:8px;display:inline-flex;">
+    <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" onclick="updateUserName()">Go!</button>
+    </span>
+  </div>
+
+  <div id="map"></div>
+ 
+</body>
+</html>

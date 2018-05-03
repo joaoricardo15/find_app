@@ -48,7 +48,7 @@ function uploadMyPosition()
                 contentType: "application/json; charset=utf-8",
                 success: function(data, status){}
             });
-            
+
             myLastPosition = myPosition;
 
             if(myId != myLastId)
@@ -90,14 +90,35 @@ function updateMarkers(positions)
             else
             {
                 var marker = new google.maps.Marker({
+                    map: map,
                     title: 'Nome do herói: '+position.id,
                     position: {
                         lat: position.lat,
                         lng: position.lng
                     },
-                    icon: 'images/bart-icon.png',
+                    label: {
+                        //color: '',
+                        //fontFamily: '',
+                        fontSize: '15px',
+                        fontWeight: '5px',
+                        text: position.id
+                    },
+                    //label: '<div style="font-size:20px;">'+position.id+'</div>',
+                    //icon: 'images/bart-icon.png',
                     animation: google.maps.Animation.DROP,
-                    map: map
+                    //animation: google.maps.Animation.BOUNCE,
+                    // icon: {
+                    //     url: '/images/bart-icon.png',
+                    //     // This marker is 20 pixels wide by 32 pixels high.
+                    //     size: new google.maps.Size(20, 32),
+                    //     // The origin for this image is (0, 0).
+                    //     origin: new google.maps.Point(0, 0),
+                    //     // The anchor for this image is the base of the flagpole at (0, 32).
+                    //     anchor: new google.maps.Point(0, 32),
+                    //     labelOrigin: new google.maps.Point(10, 20),
+
+                    //   }
+                    zIndex: 1
                 });
 
                 localPositions.push({

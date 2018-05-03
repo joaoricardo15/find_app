@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 02 23:44:16 BRT 2018
+#Thu May 03 00:38:13 BRT 2018
 76.base=C\:\\Users\\casadosheroi\\Desktop\\find_app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 5.base=C\:\\Users\\casadosheroi\\Desktop\\find_app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 86.base=C\:\\Users\\casadosheroi\\Desktop\\find_app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
