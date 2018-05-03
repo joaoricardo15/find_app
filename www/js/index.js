@@ -159,6 +159,7 @@ function initMap()
     });
 
     navigator.geolocation.watchPosition(uploadMyPosition);
+    
     updatePositionsTimer = setInterval(updatePositions, updateInterval);
 }
 
