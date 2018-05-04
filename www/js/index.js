@@ -8,6 +8,7 @@ var positionWatch;
 var myPosition;
 var myId;
 var map;
+var markerCluster;
 
 function onMapReady() {
     
@@ -50,6 +51,8 @@ function updateMarkers(positions)
 {
     if(positions.length > 0)
     {
+        var markers = [];
+
         for(var position of positions)
         {
             if(position.id)    
@@ -64,6 +67,8 @@ function updateMarkers(positions)
 
                     if(Math.abs(lat - position.lat) > minimumPrecision || Math.abs(lng - position.lng) > minimumPrecision)
                         localPositions[index].marker.setPosition({lat: position.lat, lng: position.lng});
+
+
                 }
                 else
                 {
@@ -84,27 +89,20 @@ function updateMarkers(positions)
                             lng: position.lng
                         },
                         label: {
-                            //color: '',
+                            //color: 'white',
                             //fontFamily: '',
-                            fontSize: '18px',
-                            //fontWeight: '2px',
+                            //fontSize: '25',
+                            //fontWeight: '5',
                             text: position.id.substring(0, 3)
                         },
-                        //label: '<div style="font-size:20px;">'+position.id+'</div>',
-                        //icon: 'images/bart-icon.png',
                         animation: google.maps.Animation.DROP,
-                        //animation: google.maps.Animation.BOUNCE,
-                        // icon: {
-                        //     url: '/images/bart-icon.png',
-                        //     // This marker is 20 pixels wide by 32 pixels high.
-                        //     size: new google.maps.Size(20, 32),
-                        //     // The origin for this image is (0, 0).
-                        //     origin: new google.maps.Point(0, 0),
-                        //     // The anchor for this image is the base of the flagpole at (0, 32).
-                        //     anchor: new google.maps.Point(0, 32),
-                        //     labelOrigin: new google.maps.Point(10, 20),
-
-                        //   }
+                        icon: {
+                            url: 'images/Homer_128px.png',
+                            //size: new google.maps.Size(128, 128),
+                            //origin: new google.maps.Point(0, 0),
+                            //anchor: new google.maps.Point(0, 32),
+                            labelOrigin: new google.maps.Point(71, 71)
+                        },
                         zIndex: zIndex
                     });
 
@@ -112,11 +110,14 @@ function updateMarkers(positions)
                         id: position.id,
                         marker: marker
                     });
+
+                    markerCluster.addMarker(marker, true);
                 }
             }
         }
+        
     }
-
+    
     // retira os marcadores que não estão no servidor
     for(var localIndex in localPositions)
     {
@@ -139,6 +140,7 @@ function updateMarkers(positions)
                 else
                 {
                     localPositions[localIndex].marker.setMap(null);
+                    markerCluster.removeMarker(localPositions[localIndex].marker);
                     localPositions[localIndex] = null;
                     localPositions.splice(localIndex,1);
                 }
@@ -175,6 +177,24 @@ function initMap()
                 lng: position.coords.longitude
             },
             zoom: 15
+        });
+
+        markerCluster = new MarkerClusterer(map, [], {
+            //maxZoom: 17,
+            gridSize: 30,
+            minimumClusterSize: 2,
+            styles: [
+                {
+                    url: 'images/Simpsons_128px.png',
+                    width: 170,
+                    height: 145,
+                    anchor: [18, 52],
+                    //textSize: 22,
+                    textColor: 'white',
+                    iconAnchor: [55, 120]
+                }
+            ],
+            imagePath: 'images/'
         });
 
         uploadMyPosition(position);
