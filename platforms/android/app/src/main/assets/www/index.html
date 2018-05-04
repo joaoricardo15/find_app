@@ -8,10 +8,10 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
   <!-- requests of script files -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTr74nVYmMqNBGYeMwuLqVe3zCnA9tRWM&callback=initMap" async defer></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTr74nVYmMqNBGYeMwuLqVe3zCnA9tRWM&callback=onMapReady" async defer></script>
   <script type="text/javascript" src="cordova.js"></script>
 
   <!-- requests of layout files -->
@@ -50,14 +50,7 @@
               <li><a href="#">One more separated link</a></li>
             </ul>
           </li>
-        
 
-          <div class="input-group" style="width:90%;padding-top:8px;padding-bottom:8px;display:inline-flex;">
-            <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button" onclick="updateUserName()">Go!</button>
-            </span>
-          </div>
         </ul>
 
         <!--
@@ -70,15 +63,8 @@
     </div><!-- /.container-fluid 
   </nav><!-- /.navbar-default 
   
-  <div style="width:89%;padding-top:8px;padding-bottom:8px;display:inline-flex;">
-    <input id="userName" type="text" class="form-control" placeholder="Insert your user name (ex: joao)">
-    <span class="input-group-btn">
-      <button class="btn btn-default" type="button" onclick="getUserName()">Go!</button>
-    </span>
   </div>
   -->
-
-  <div id="map"></div>
  
 </body>
 </html>
